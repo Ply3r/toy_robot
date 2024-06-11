@@ -31,7 +31,7 @@ RSpec.describe ToyRobot do
 
     context 'move' do
       it 'moves the robot one tile to the current direction' do
-        response = subject.exec_command('PLACE 2,4,SOUTH')
+        response = subject.exec_command('PLACE 2,3,SOUTH')
         response = subject.exec_command('MOVE')
         expect(response[:position]).to eql([2, 4])
         expect(response[:face]).to eq(2)
