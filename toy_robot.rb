@@ -20,7 +20,7 @@ class ToyRobot
     return 'Invalid Face!' unless FACE_MAP[f]
 
     @position = [x, y]
-    @face = FACE_MAP[f.upcase]
+    @face = FACE_MAP[f]
 
     report
   end
